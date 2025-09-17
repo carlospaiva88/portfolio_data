@@ -1,51 +1,51 @@
 import { Card, CardContent, CardHeader } from "./ui/card";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
-import { ExternalLink, Github, Database, TrendingUp, Zap } from "lucide-react";
+import { ExternalLink, Github, Database, TrendingUp, Zap, ChartArea } from "lucide-react";
 
 const Projects = () => {
   const projects = [
     {
-      title: "Pipeline de Dados E-commerce",
-      description: "Sistema completo de ETL para processar dados de vendas em tempo real, com ingestão de múltiplas fontes, transformações complexas e carregamento em data warehouse.",
+      title: "Pipeline de Dados com AWS",
+      description: "Sistema de ETL completo para a visualização do impacto na indústria audiovisual no período da Pandemia ",
       image: "/api/placeholder/600/400",
-      technologies: ["Python", "Apache Spark", "Kafka", "AWS S3", "Redshift", "Airflow"],
+      technologies: ["Python", "AWS S3", "AWS Glue", "Athena", "Lambda", "QuickSight"],
       highlights: [
-        "Processamento de 1TB+ de dados diários",
-        "Redução de 60% no tempo de processamento",
-        "Arquitetura escalável e fault-tolerant"
+        "Todo o processo de ETL no ambiente cloud utilizando os serviços da AWS",
+        "Execução de funções Python para realizar as requisições de API",
+        "Construção de Jobs com o Amazon Glue para relizar alguns processo de ETL",
+        "Modelagem de dados, relacional e dimensional",
+        "Consultas via SQL utilizando o Amazon Athena",
+        "Visualização e insights utilizando o Amazon QuickSight",
       ],
-      githubUrl: "#",
-      demoUrl: "#",
-      category: "Real-time Processing",
+      
+      // githubUrl: "#",
+      category: "Cloud",
       icon: Zap
     },
     {
-      title: "Data Lake Architecture",
-      description: "Implementação de data lake moderna com governança de dados, catálogo automatizado e pipelines de qualidade de dados para suporte a analytics e ML.",
+      title: "Análise de Dados",
+      description: "Análise de Dados sobre o Processo de Anistia no Brasil - Dataset Público",
       image: "/api/placeholder/600/400",
-      technologies: ["AWS", "Delta Lake", "Databricks", "Terraform", "Python", "SQL"],
+      technologies: ["Python", "Pandas", "SQL", "Matplotlib", "Jupyter"],
       highlights: [
-        "Arquitetura medallion (Bronze, Silver, Gold)",
-        "Automação completa de deploy",
-        "Catálogo de dados automatizado"
+        "Limpeza e padronização do dataset com Pandas",
+        "Gráficos com Matplotlib para a visualização dos insights",
       ],
-      githubUrl: "#",
-      demoUrl: "#",
-      category: "Data Architecture",
-      icon: Database
+      // githubUrl: "#",
+      category: "Data Analytics",
+      icon: ChartArea
     },
     {
-      title: "Analytics Dashboard Platform",
-      description: "Plataforma de dashboards em tempo real para KPIs de negócio, integrando múltiplas fontes de dados com visualizações interativas e alertas automáticos.",
+      title: "Analytics Dashboard",
+      description: "Projeto de implementação de dados em uma empresa que quer tomar decisões mais rápidas sobre o estoque e promoções.",
       image: "/api/placeholder/600/400",
-      technologies: ["Power BI", "Python", "PostgreSQL", "Docker", "FastAPI", "Redis"],
+      technologies: ["Power BI", "Python", "PostgreSQL", "FastAPI", "Redis"],
       highlights: [
-        "Dashboards em tempo real",
-        "Sistema de alertas inteligentes",
-        "API REST para integração"
+        "Processo de ETL",
+        "Dashboard interativo"
       ],
-      githubUrl: "#",
+      // githubUrl: "#",
       demoUrl: "#",
       category: "Business Intelligence",
       icon: TrendingUp
@@ -139,17 +139,13 @@ const Projects = () => {
                       </div>
                     </div>
 
-                    {/* Action Buttons */}
+                    {/* Action Buttons
                     <div className="flex space-x-4">
-                      <Button variant="hero" size="sm" className="group">
+                      <Button variant="hero" size="sm" className="group" >
                         <Github className="mr-2 h-4 w-4 group-hover:rotate-12 transition-transform" />
                         Ver Código
                       </Button>
-                      <Button variant="outline_glow" size="sm" className="group">
-                        <ExternalLink className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
-                        Demo Live
-                      </Button>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </Card>
@@ -162,12 +158,17 @@ const Projects = () => {
               Quer ver mais projetos?
             </h3>
             <p className="text-muted-foreground mb-6">
-              Visite meu GitHub para explorar outros projetos e contribuições open source
+              Visite meu GitHub para explorar outros projetos
             </p>
-            <Button variant="gradient" size="lg" className="group">
-              <Github className="mr-2 h-5 w-5 group-hover:rotate-12 transition-transform" />
-              Ver no GitHub
-            </Button>
+            <a
+              href="https://github.com/carlospaiva88"
+              className="inline-block group text-muted-foreground hover:text-data-blue transition-colors duration-300 hover:scale-110 transform px-4 py-2 rounded-md text-lg bg-hero"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+            <Github size={24} />
+            </a>
           </div>
         </div>
       </div>

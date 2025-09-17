@@ -19,31 +19,20 @@ const Skills = () => {
       icon: Code,
       color: "text-data-blue",
       skills: [
-        { name: "Python", level: 95, frameworks: ["Pandas", "NumPy", "PySpark"] },
-        { name: "SQL", level: 90, frameworks: ["PostgreSQL", "MySQL", "BigQuery"] },
-        { name: "Scala", level: 75, frameworks: ["Spark", "Akka"] },
-        { name: "R", level: 70, frameworks: ["dplyr", "ggplot2"] },
+        { name: "Python", level: 65, frameworks: ["Pandas", "NumPy", "PySpark"] },
+        { name: "SQL", level: 73, frameworks: ["PostgreSQL", "MySQL", "Dbeaver"] },
+        { name: "JavaScript", level: 50, frameworks: ["React", "Vite"] },
       ]
     },
-    {
-      title: "Big Data & Processing",
-      icon: Cpu,
-      color: "text-data-purple",
-      skills: [
-        { name: "Apache Spark", level: 90, frameworks: ["PySpark", "Spark SQL", "MLlib"] },
-        { name: "Apache Kafka", level: 85, frameworks: ["Kafka Streams", "Connect"] },
-        { name: "Apache Airflow", level: 88, frameworks: ["DAGs", "Operators"] },
-        { name: "Hadoop", level: 75, frameworks: ["HDFS", "YARN", "MapReduce"] },
-      ]
-    },
+    
     {
       title: "Cloud Platforms",
       icon: Cloud,
       color: "text-data-green",
       skills: [
-        { name: "AWS", level: 85, frameworks: ["S3", "EMR", "Redshift", "Lambda"] },
-        { name: "Google Cloud", level: 80, frameworks: ["BigQuery", "Dataflow", "Pub/Sub"] },
-        { name: "Azure", level: 70, frameworks: ["Data Factory", "Databricks"] },
+        { name: "AWS", level: 75, frameworks: ["S3", "Glue", "QuickSight", "Lambda"] },
+        { name: "Google Cloud", level: 40, frameworks: ["BigQuery", "Dataflow", "Pub/Sub"] },
+        { name: "Azure", level: 20, frameworks: ["Data Factory", "Databricks"] },
       ]
     },
     {
@@ -51,9 +40,8 @@ const Skills = () => {
       icon: Database,
       color: "text-data-cyan",
       skills: [
-        { name: "Data Warehousing", level: 90, frameworks: ["Snowflake", "Redshift"] },
-        { name: "NoSQL", level: 85, frameworks: ["MongoDB", "Cassandra", "DynamoDB"] },
-        { name: "Time Series", level: 80, frameworks: ["InfluxDB", "TimescaleDB"] },
+        { name: "Data Warehousing", level: 60, frameworks: ["Snowflake", "Redshift"] },
+        { name: "NoSQL", level: 55, frameworks: ["MongoDB", "Cassandra", "DynamoDB"] },
       ]
     },
     {
@@ -61,10 +49,9 @@ const Skills = () => {
       icon: Settings,
       color: "text-data-purple",
       skills: [
-        { name: "Docker", level: 85, frameworks: ["Kubernetes", "Docker Compose"] },
+        { name: "Docker", level: 65, frameworks: ["Kubernetes", "Docker Compose"] },
         { name: "Git", level: 90, frameworks: ["GitHub", "GitLab"] },
-        { name: "CI/CD", level: 80, frameworks: ["Jenkins", "GitHub Actions"] },
-        { name: "Terraform", level: 75, frameworks: ["Infrastructure as Code"] },
+        { name: "CI/CD", level: 58, frameworks: ["Jenkins", "GitHub Actions"] },
       ]
     },
     {
@@ -72,9 +59,8 @@ const Skills = () => {
       icon: BarChart3,
       color: "text-data-green",
       skills: [
-        { name: "Tableau", level: 85, frameworks: ["Dashboards", "Stories"] },
-        { name: "Power BI", level: 80, frameworks: ["Reports", "DAX"] },
-        { name: "Grafana", level: 75, frameworks: ["Monitoring", "Alerting"] },
+        { name: "Tableau", level: 45, frameworks: ["Dashboards", "Stories"] },
+        { name: "Power BI", level: 60, frameworks: ["Reports", "DAX"] },
       ]
     }
   ];
@@ -154,8 +140,8 @@ const Skills = () => {
             <div className="flex flex-wrap justify-center gap-3">
               {[
                 "Data Modeling", "ETL/ELT Design", "Data Quality", 
-                "Performance Tuning", "Data Governance", "API Development",
-                "Machine Learning Pipelines", "Stream Processing", 
+                "Data Governance", "API Development",
+                "Back End", 
                 "Data Architecture", "Agile/Scrum"
               ].map((skill) => (
                 <Badge 

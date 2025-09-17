@@ -5,74 +5,78 @@ import { Calendar, MapPin, Building, TrendingUp } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Data Engineer",
-      company: "TechCorp Solutions",
-      period: "Mar 2023 - Atual",
-      location: "São Paulo, SP",
-      type: "Full-time",
-      description: "Responsável por projetar e implementar pipelines de dados escaláveis, otimizando o processamento de grandes volumes de dados e reduzindo custos operacionais em 40%.",
+      title: "Autônomo — Desenvolvimento e Gestão de Blogs",
+      company: "Trabalho Autônomo",
+      period: "Set 2025 – Presente",
+      location: "Remoto",
+      type: "Autônomo",
+      description:
+        "Desenvolvimento e gestão de blogs em diversos nichos, incluindo a criação de conteúdos e estratégias para produtos afiliados, visando crescimento orgânico e monetização.",
       achievements: [
-        "Implementação de arquitetura de data lake que processa 5TB+ diários",
-        "Migração de pipelines legados para Apache Spark, reduzindo tempo de processamento em 60%",
-        "Liderança técnica em projeto de real-time analytics com Kafka e Spark Streaming",
-        "Desenvolvimento de framework interno de qualidade de dados"
+        "Criação e manutenção contínua de blogs em diferentes áreas de interesse",
+        "Implementação de estratégias de vendas e marketing de produtos afiliados",
+        "Otimização de SEO para melhorar desempenho e alcance dos blogs",
+        "Gestão completa dos processos de publicação, análise de métricas e atendimento ao público"
       ],
-      technologies: ["Python", "Apache Spark", "Kafka", "AWS", "Airflow", "SQL"]
+      technologies: ["SEO", "WordPress", "Google Analytics", "Marketing de Conteúdo", "Affiliate Marketing"]
     },
     {
-      title: "Estagiário Data Engineer",
-      company: "DataFlow Enterprises",
-      period: "Jan 2022 - Fev 2023",
-      location: "São Paulo, SP",
+      title: "Estagiário de Data Engineering",
+      company: "Compass.UOL",
+      period: "Mar 2025 – Ago 2025",
+      location: "Remoto",
       type: "Estágio",
-      description: "Desenvolvimento de ETL pipelines e automação de processos de dados, contribuindo para projetos de modernização da infraestrutura de dados da empresa.",
+      description: "Projeto e manutenção de pipelines de dados escaláveis, trabalhando com Python, Spark, SQL e cloud AWS (Glue, S3, Athena).",
       achievements: [
-        "Criação de 15+ pipelines ETL automatizados usando Python e SQL",
-        "Implementação de monitoramento e alertas para pipelines críticos",
-        "Contribuição para migração de dados on-premise para cloud (AWS)",
-        "Documentação técnica e treinamento da equipe em novas ferramentas"
+        "Desenvolvimento e manutenção de pipelines de dados utilizando Python e SQL",
+        "Construção de ambientes containerizados com Docker e Docker Compose para automação de fluxos de dados",
+        "Limpeza, transformação e validação de conjuntos de dados estruturados e semiestruturados (.csv, .json)",
+        "Criação de visualizações de dados e análises exploratórias para apoiar tomadas de decisão",
+        "Trabalho atual com AWS para construção de soluções de dados em nuvem",
+        "Aprendizado e aplicação de PySpark para processamento distribuído de grandes volumes de dados",
+        "Exploração de modelagem relacional e dimensional para casos de uso em data warehouse",
+        "Colaboração em ambiente ágil, seguindo melhores práticas de DevOps e engenharia de dados"
       ],
-      technologies: ["Python", "SQL", "AWS S3", "PostgreSQL", "Docker", "Git"]
+      technologies: ["Python", "SQL", "PySpark", "AWS (Glue, S3, Athena)", "Docker", "Docker Compose", "Jupyter"]
     },
     {
-      title: "Analista de Dados Jr.",
-      company: "Analytics Hub",
-      period: "Jun 2021 - Dez 2021",
-      location: "São Paulo, SP",
+      title: "Autônomo / Freelancer",
+      company: "Diversos",
+      period: "Jan 2023 – Jan 2025",
+      location: "Ponta Grossa - Paraná",
       type: "Part-time",
-      description: "Análise de dados de negócio e criação de dashboards interativos, fornecendo insights estratégicos para diferentes áreas da empresa.",
+      description: "Atividades paralelas desenvolvendo habilidades de comunicação, gestão de projetos e desenvolvimento web.",  
       achievements: [
-        "Desenvolvimento de 20+ dashboards em Power BI e Tableau",
-        "Automação de relatórios mensais, economizando 40h/mês da equipe",
-        "Análise de dados de vendas resultando em aumento de 15% na conversão",
-        "Implementação de pipeline de dados para análise de comportamento de usuários"
+        "Motorista parceiro da Uber, com alto desempenho em atendimento ao cliente",
+        "Gestão de vendas online, incluindo estoque, precificação e suporte ao cliente",
+        "Desenvolvimento de aplicações web para pequenos negócios, usando Django e React",
+        "Autogestão de prazos, priorização de tarefas e entrega de projetos"
       ],
-      technologies: ["Power BI", "SQL", "Python", "Excel", "Tableau"]
-    }
+      technologies: []
+    },
+    
   ];
 
   const education = [
     {
-      degree: "Bacharelado em Engenharia de Dados",
-      institution: "Universidade Tecnológica de São Paulo",
-      period: "2020 - 2024",
+      degree: "Ciências de Dados",
+      institution: "Universidade Unicesumar",
+      period: "2024 - 2026",
       description: "Formação focada em big data, machine learning, arquitetura de sistemas e governança de dados.",
-      highlights: ["TCC: Otimização de Pipelines de ML em Produção", "Bolsista de Iniciação Científica"]
+      highlights: []
     },
     {
-      degree: "Curso Técnico em Informática",
-      institution: "ETEC São Paulo",
-      period: "2018 - 2019",
+      degree: "Curso Desenvolvimento Web Full Stack Python",
+      institution: "EBAC - São Paulo",
+      period: "2023 - 2024",
       description: "Base sólida em programação, banco de dados e desenvolvimento de sistemas.",
-      highlights: ["Projeto Final: Sistema de Gestão Escolar", "Menção Honrosa em Programação"]
+      highlights: ["Projeto Final: Plataforma de E-commerce - Divulgação de Restaurantes",]
     }
   ];
 
   const certifications = [
-    "AWS Certified Data Engineer - Associate",
-    "Google Cloud Professional Data Engineer",
-    "Apache Spark Certified Developer",
-    "Databricks Certified Associate Developer"
+    "AWS Certified Cloud Practitioner",
+  
   ];
 
   return (

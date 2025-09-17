@@ -1,24 +1,53 @@
-# Logs
-logs
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+ENV/
+build/
+.pytest_cache/
+pip-log.txt
+*.egg-info/
+.eggs/
+*.egg
+instance/
+.webassets-cache
+.env
+.env.local
+
+# Flask specific
+*.db
+*.sqlite3
+*.sqlite
+/instance
+.pytest_cache
+
+# Node.js / React
+node_modules/
+dist/
+build/
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# OS specific files
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+
+# dotenv files
+.env
+
+# IDE folders
+.vscode/
+.idea/
+
+# Coverage reports
+coverage/
+
+# React specific
+*.local
+.local

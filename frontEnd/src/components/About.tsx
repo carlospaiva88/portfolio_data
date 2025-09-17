@@ -35,23 +35,21 @@ const About = () => {
             <div className="space-y-6">
               <div className="prose prose-lg text-foreground max-w-none">
                 <p className="text-muted-foreground leading-relaxed">
-                  Com experiência sólida em <strong className="text-data-blue">engenharia de dados</strong>, 
-                  especializo-me em projetar e implementar pipelines de dados robustos, 
-                  arquiteturas escaláveis e soluções de processamento em tempo real.
-                </p>
-                
-                <p className="text-muted-foreground leading-relaxed">
-                  Minha abordagem combina <strong className="text-data-purple">tecnologias modernas</strong> 
-                  como Apache Spark, Apache Airflow e cloud computing (AWS/GCP) para 
-                  criar sistemas que processam grandes volumes de dados com eficiência 
-                  e confiabilidade.
+                  Tenho <strong className="text-data-blue">experiência sólida em engenharia de dados</strong>, com atuação em projetos reais de construção e manutenção de pipelines escaláveis, arquiteturas em nuvem e processamento de grandes volumes de dados, utilizando em meu cotidiano tecnologias como <strong className="text-data-orange">Python</strong>, <strong className="text-data-orange">React</strong> e <strong className="text-data-orange">AWS (S3, Glue, Athena)</strong>.
                 </p>
 
                 <p className="text-muted-foreground leading-relaxed">
-                  Busco constantemente <strong className="text-data-green">otimizar processos</strong>, 
-                  reduzir custos operacionais e implementar as melhores práticas de 
-                  governança de dados e qualidade.
+                  Atualmente, estou focado também em iniciativas autônomas de <strong className="text-data-purple">desenvolvimento e gestão de blogs em múltiplos nichos</strong>, aplicando estratégias de <strong className="text-data-green">SEO</strong> e <strong className="text-data-green">marketing de afiliados</strong> para monetização e crescimento orgânico, o que me permitiu desenvolver habilidades em marketing digital, análise de métricas e suporte ao público.
                 </p>
+
+                <p className="text-muted-foreground leading-relaxed">
+                  Minha abordagem profissional alia o <strong className="text-data-pink">domínio técnico avançado</strong> ao gerenciamento eficiente de projetos, com constante busca por otimização de processos e implementação das melhores práticas de governança e qualidade de dados.
+                </p>
+
+                <p className="text-muted-foreground leading-relaxed">
+                  Integro com facilidade em <strong className="text-data-teal">ambientes ágeis</strong> e colaborativos, e adoto práticas de <strong className="text-data-teal">DevOps</strong> para automatização e entrega contínua de valor.
+                </p>
+
               </div>
 
               {/* Highlights */}

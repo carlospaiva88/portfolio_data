@@ -92,9 +92,7 @@ const Footer = () => {
             </div>
             
             <div className="flex items-center space-x-4">
-              <div className="text-sm text-muted-foreground">
-                Feito com ❤️ usando React & Tailwind
-              </div>
+             
               <Button 
                 variant="ghost" 
                 size="sm"
