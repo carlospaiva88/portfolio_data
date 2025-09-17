@@ -1,73 +1,91 @@
-# Welcome to your Lovable project
+# Portfólio de Engenharia de Dados
 
-## Project info
+[![Visite o Portfólio](https://img.shields.io/badge/Visitar-Portfólio-blue)](https://portfolio-data-beige.vercel.app/)
 
-**URL**: https://lovable.dev/projects/caf5c8c7-f9e8-4136-8b93-2ba318674e9e
+**Projeto em produção:** [https://portfolio.vercel.app](https://portfolio-data-beige.vercel.app/)  
+**Código aberto:** [github.com/carlospaiva88/portfolio_data](https://github.com/carlospaiva88/portfolio_data)
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## Sobre
 
-**Use Lovable**
+Este portfólio é o **ponto de encontro digital** dos meus principais projetos, habilidades e contatos como **Engenheiro/Analista de Dados**.  
+O objetivo é mostrar de forma clara e direta **o que sei fazer, como trabalho e onde posso agregar valor**.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/caf5c8c7-f9e8-4136-8b93-2ba318674e9e) and start prompting.
+### Storytelling
 
-Changes made via Lovable will be committed automatically to this repo.
+Desenvolvi este portfólio com React, TypeScript e Tailwind, utilizando componentes UI modernos (shadcn-ui), para entregar uma experiência profissional, acessível e de fácil manutenção.  
+O site está hospedado na **Vercel**, aproveitando CI/CD automático, distribuição global e altíssima performance.
 
-**Use your preferred IDE**
+Meu objetivo não é apenas **listar projetos**, mas **explicar como resolvo problemas reais** usando arquiteturas escaláveis, pipelines robustos, ferramentas de nuvem e de código aberto.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Tecnologias e Habilidades
 
-Follow these steps:
+- **Frontend:** React (TypeScript), Vite, Tailwind CSS, shadcn-ui
+- **Versionamento:** GitHub
+- **Deploy:** Vercel (CI/CD automático)
+- **Backend (em breve):** Flask, PostgreSQL, AWS
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+**Soft Skills:**  
+Comunicação clara, autogestão, resolução de problemas, capacidade de aprendizado contínuo, trabalho em equipe (presencial/remoto).
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Destaques
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- **UI moderna, responsiva e acessível**
+- **SEO otimizado** para ranqueamento em buscadores
+- **Contato direto** (formulário e redes)
+- **Download do CV** (com tracking de downloads para analytics)
+- **Hospedagem 100% na nuvem** (Vercel)
+- **Código aberto** (transparência e colaboração)
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Como rodar localmente
 
-**Use GitHub Codespaces**
+### Pré-requisitos
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- Node.js (v18+)
+- npm ou yarn
 
-## What technologies are used for this project?
+### Passo a passo
 
-This project is built with:
+### Clone o repositório
+``git clone https://github.com/carlospaiva88/portfolio_data``
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Entre na pasta do projeto
+``cd portfolio_data``
 
-## How can I deploy this project?
+### Instale as dependências
+``npm install``
 
-Simply open [Lovable](https://lovable.dev/projects/caf5c8c7-f9e8-4136-8b93-2ba318674e9e) and click on Share -> Publish.
+### Inicie o servidor de desenvolvimento
+``npm run dev``
 
-## Can I connect a custom domain to my Lovable project?
+### Acesse no navegador
+``http://localhost:3000``
 
-Yes, you can!
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Links e Contato
+
+- **LinkedIn:** [linkedin.com/in/carlospaiva88](https://www.linkedin.com/in/carlospaiva88/)
+- **E-mail:** carloscjr70@gmail.com
+- **Vercel:** [https://portfolio-data-beige.vercel.app/](https://portfolio-data-beige.vercel.app/)
+- **GitHub:** [github.com/carlospaiva88](https://github.com/carlospaiva88/portfolio_data)
+
+---
+
+##  Notas para recrutadores e profissionais
+
+- **Este portfólio é orgânico:** será atualizado com novos projetos, tecnologias e conquistas profissionais, artigos e produtos.
+- **O backend (Flask, PostgreSQL, AWS, etc.) será disponibilizado em breve**, conectando o frontend a uma API real e um painel de analytics.
+- **Se quiser conversar sobre oportunidades, parcerias ou colaborações**, use o canal de contato do site ou envie uma mensagem direta.
+
+---
+
+- *Developed by **Carlos Paiva***
