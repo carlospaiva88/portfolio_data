@@ -7,8 +7,6 @@ import { articles } from "../data/articles";
 import Header from "./Header";
 import FooterPages from "./FooterPages";
 
-
-
 const ArticlePage = () => {
   const { slug } = useParams();
   const article = articles.find((a) => a.slug === slug);
@@ -37,53 +35,52 @@ const ArticlePage = () => {
 
   return (
     <>
-    
-    <Header />
-    <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-card/30">
-      <HelmetProvider>
-        <title>{article.title} | DataPortfolio</title>
-        <meta name="description" content={article.description} />
-        <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
-      </HelmetProvider>
+      <Header />
+      <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-card/30">
+        <HelmetProvider>
+          <title>{article.title} | DataPortfolio</title>
+          <meta name="description" content={article.description} />
+          <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
+        </HelmetProvider>
 
-      <Breadcrumbs
-        items={[
-          { label: "Início", href: "/" },
-          { label: "Artigos", href: "/artigos" },
-          { label: article.title, href: `#` },
-        ]}
-      />
+        <Breadcrumbs
+          items={[
+            { label: "Início", href: "/" },
+            { label: "Artigos", href: "/artigos" },
+            { label: article.title, href: `#` },
+          ]}
+        />
 
-      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 text-foreground">
-        {article.title}
-      </h1>
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 text-foreground">
+          {article.title}
+        </h1>
 
-      <div className="flex items-center gap-2 text-sm text-muted-foreground mb-8">
-        <span>{article.author}</span>
-        <span>•</span>
-        <time dateTime={article.date}>{formattedDate}</time>
-      </div>
+        <div className="flex items-center gap-2 text-sm text-muted-foreground mb-8">
+          <span>{article.author}</span>
+          <span>•</span>
+          <time dateTime={article.date}>{formattedDate}</time>
+        </div>
 
-      <img
-        src={article.imageUrl}
-        alt={article.title}
-        className="w-full rounded-lg object-cover mb-8"
-        style={{ maxHeight: "400px" }}
-        loading="lazy"
-      />
+        <img
+          src={article.imageUrl}
+          alt={`Imagem ilustrativa do artigo ${article.title}`}
+          className="w-full rounded-lg object-cover mb-8"
+          style={{ maxHeight: "400px" }}
+          loading="lazy"
+        />
 
-      <article
-        className="prose prose-sm sm:prose-base lg:prose-lg max-w-none"
-        dangerouslySetInnerHTML={{ __html: article.content }}
-      />
+        <article
+          className="prose prose-sm sm:prose-base lg:prose-lg max-w-none"
+          dangerouslySetInnerHTML={{ __html: article.content }}
+        />
 
-      <div className="mt-12">
-        <Button variant="hero" asChild>
-          <Link to="/artigos">Ver todos os artigos</Link>
-        </Button>
-      </div>
-    </main>
-    <FooterPages />
+        <div className="mt-12">
+          <Button variant="hero" asChild>
+            <Link to="/artigos">Ver todos os artigos</Link>
+          </Button>
+        </div>
+      </main>
+      <FooterPages />
     </>
   );
 };

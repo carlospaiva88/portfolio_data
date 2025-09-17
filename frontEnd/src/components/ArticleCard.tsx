@@ -35,7 +35,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
         <div className="w-full h-40 overflow-hidden rounded-t-lg">
           <img
             src={imageUrl}
-            alt={title}
+            alt={`Imagem ilustrativa do artigo ${title}`}
             className="object-cover object-center w-full h-full transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />

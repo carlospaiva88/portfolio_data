@@ -1,0 +1,41 @@
+.article-content h2 {
+  margin-top: 2.5rem;
+  font-size: 1.6rem;
+  border-left: 4px solid #2563EB;
+  padding-left: 0.8rem;
+  color: #0F172A;
+}
+
+.article-content h3 {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  color: #1E293B;
+}
+
+.article-content p {
+  margin: 1.2rem 0;
+  font-size: 1.05rem;
+}
+
+.article-content ul {
+  padding-left: 1.5rem;
+  margin: 1.2rem 0;
+}
+.article-content ul li {
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+}
+
+.article-content pre {
+  background: #0F172A;
+  color: #E2E8F0;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.95rem;
+  margin: 1.5rem 0;
+}
+
+.article-content code {
+  font-family: "Fira Code", monospace;
+}
