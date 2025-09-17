@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { HelmetProvider } from "react-helmet-async";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { products } from "@/data/products";
@@ -33,11 +33,11 @@ const ProductPage = () => {
     <>
     <Header />
     <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-card/30">
-      <Helmet>
+      <HelmetProvider>
         <title>{product.title} | DataPortfolio</title>
         <meta name="description" content={product.description} />
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
-      </Helmet>
+      </HelmetProvider>
 
       <Breadcrumbs
         items={[
