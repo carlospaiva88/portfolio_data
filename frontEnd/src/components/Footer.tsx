@@ -15,7 +15,7 @@ const Footer = () => {
             {/* Brand Column */}
             <div className="md:col-span-2 space-y-4">
               <h3 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-                DataPortfolio
+                CarlosPaiva
               </h3>
               <p className="text-muted-foreground leading-relaxed max-w-md">
                 Engenheiro de dados especializado em criar soluções escaláveis e 
@@ -24,25 +24,18 @@ const Footer = () => {
               </p>
               <div className="flex space-x-4">
                 <a 
-                  href="#" 
+                  href="linkedin.com/in/carlospaiva88/" 
                   className="text-muted-foreground hover:text-data-blue transition-colors duration-300"
                   aria-label="LinkedIn"
                 >
                   <Linkedin size={20} />
                 </a>
                 <a 
-                  href="#" 
+                  href="https://github.com/carlospaiva88" 
                   className="text-muted-foreground hover:text-data-blue transition-colors duration-300"
                   aria-label="GitHub"
                 >
                   <Github size={20} />
-                </a>
-                <a 
-                  href="#" 
-                  className="text-muted-foreground hover:text-data-blue transition-colors duration-300"
-                  aria-label="Email"
-                >
-                  <Mail size={20} />
                 </a>
               </div>
             </div>
@@ -75,20 +68,17 @@ const Footer = () => {
             <div className="space-y-4">
               <h4 className="text-lg font-semibold text-foreground">Contato</h4>
               <div className="space-y-2 text-muted-foreground">
-                <p>São Paulo, SP - Brasil</p>
-                <p>+55 (11) 99999-9999</p>
-                <p>seuemail@exemplo.com</p>
+                <p>Porto - Portugal</p>
+                <p>+55 (48) 99106-8048</p>
+                <p>carloscjr70@gmail.com</p>
               </div>
-              <Button variant="hero" size="sm" className="w-full">
-                Vamos Conversar
-              </Button>
             </div>
           </div>
 
           {/* Bottom Bar */}
           <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-border">
             <div className="text-sm text-muted-foreground mb-4 md:mb-0">
-              © 2024 [Seu Nome]. Todos os direitos reservados.
+              © 2025 JadeLabs Todos os direitos reservados.
             </div>
             
             <div className="flex items-center space-x-4">

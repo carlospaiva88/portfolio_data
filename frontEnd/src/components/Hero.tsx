@@ -89,9 +89,6 @@ export default function Hero() {
               <Download className={`mr-2 h-5 w-5 ${isDownloading ? "animate-spin" : "group-hover:animate-bounce"}`} />
               {isDownloading ? "Baixando..." : "Download CV"}
             </Button>
-            <Button variant="outline_glow" size="xl">
-              Ver Projetos
-            </Button>
           </div>
 
           <div className="flex justify-center space-x-6 mt-8">

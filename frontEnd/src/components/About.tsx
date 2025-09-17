@@ -7,7 +7,7 @@ const About = () => {
     { icon: Database, value: "500GB+", label: "Dados Processados", color: "text-data-blue" },
     { icon: TrendingUp, value: "40%", label: "Melhoria Performance", color: "text-data-green" },
     { icon: Users, value: "10+", label: "Projetos Entregues", color: "text-data-purple" },
-    { icon: Award, value: "3", label: "Certificações", color: "text-data-cyan" },
+    { icon: Award, value: "1", label: "Certificações", color: "text-data-cyan" },
   ];
 
   return (
@@ -16,9 +16,7 @@ const About = () => {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <Badge variant="secondary" className="mb-4 bg-gradient-secondary text-white border-0">
-              💫 Sobre Mim
-            </Badge>
+
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
               <span className="bg-gradient-primary bg-clip-text text-transparent">
                 Transformando Dados em Valor
@@ -35,15 +33,15 @@ const About = () => {
             <div className="space-y-6">
               <div className="prose prose-lg text-foreground max-w-none">
                 <p className="text-muted-foreground leading-relaxed">
-                  Tenho <strong className="text-data-blue">experiência sólida em engenharia de dados</strong>, com atuação em projetos reais de construção e manutenção de pipelines escaláveis, arquiteturas em nuvem e processamento de grandes volumes de dados, utilizando em meu cotidiano tecnologias como <strong className="text-data-orange">Python</strong>, <strong className="text-data-orange">React</strong> e <strong className="text-data-orange">AWS (S3, Glue, Athena)</strong>.
+                  Tenho <strong className="text-data-blue">experiência sólida em engenharia de dados</strong>, com atuação em projetos reais de construção e manutenção de pipelines escaláveis, arquiteturas em nuvem e processamento de grandes volumes de dados, utilizando em meu cotidiano tecnologias como <strong className="text-data-blue">Python</strong>, <strong className="text-data-blue">React</strong> e <strong className="text-data-blue">AWS (S3, Glue, Athena)</strong>.
                 </p>
 
                 <p className="text-muted-foreground leading-relaxed">
-                  Atualmente, estou focado também em iniciativas autônomas de <strong className="text-data-purple">desenvolvimento e gestão de blogs em múltiplos nichos</strong>, aplicando estratégias de <strong className="text-data-green">SEO</strong> e <strong className="text-data-green">marketing de afiliados</strong> para monetização e crescimento orgânico, o que me permitiu desenvolver habilidades em marketing digital, análise de métricas e suporte ao público.
+                  Atualmente, estou focado também em iniciativas autônomas de <strong className="text-data-blue">desenvolvimento e gestão de blogs em múltiplos nichos</strong>, aplicando estratégias de <strong className="text-data-blue">SEO</strong> e <strong className="text-data-blue">marketing de afiliados</strong> para monetização e crescimento orgânico, o que me permitiu desenvolver habilidades em marketing digital, análise de métricas e suporte ao público.
                 </p>
 
                 <p className="text-muted-foreground leading-relaxed">
-                  Minha abordagem profissional alia o <strong className="text-data-pink">domínio técnico avançado</strong> ao gerenciamento eficiente de projetos, com constante busca por otimização de processos e implementação das melhores práticas de governança e qualidade de dados.
+                  Minha abordagem profissional alia o <strong className="text-data-blue">domínio técnico avançado</strong> ao gerenciamento eficiente de projetos, com constante busca por otimização de processos e implementação das melhores práticas de governança e qualidade de dados.
                 </p>
 
                 <p className="text-muted-foreground leading-relaxed">

@@ -71,9 +71,6 @@ const Skills = () => {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <Badge variant="secondary" className="mb-4 bg-gradient-accent text-white border-0">
-              🛠️ Habilidades Técnicas
-            </Badge>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
               <span className="bg-gradient-primary bg-clip-text text-transparent">
                 Stack Tecnológico

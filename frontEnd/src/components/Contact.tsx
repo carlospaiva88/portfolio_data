@@ -118,12 +118,6 @@ const handleSubmit = async (e) => {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <Badge
-              variant="secondary"
-              className="mb-4 bg-gradient-accent text-white border-0"
-            >
-              📞 Contato
-            </Badge>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
               <span className="bg-gradient-primary bg-clip-text text-transparent">
                 Vamos Trabalhar Juntos
@@ -332,7 +326,7 @@ const handleSubmit = async (e) => {
           </div>
 
           {/* Additional Info */}
-          <div className="mt-16 text-center">
+          {/* <div className="mt-16 text-center">
             <Card className="bg-gradient-primary border-0 text-white">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold mb-4">Pronto para Contribuir</h3>
@@ -359,7 +353,7 @@ const handleSubmit = async (e) => {
                 </div>
               </CardContent>
             </Card>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
