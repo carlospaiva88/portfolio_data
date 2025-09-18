@@ -1,56 +1,20 @@
 import { useState } from 'react';
-import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
-import { ArrowDown, Download, Github, Linkedin } from "lucide-react";
+import { ArrowDown, Linkedin, Github } from "lucide-react";
 import heroBackground from "@/assets/hero-data-bg.jpg";
 
 export default function Hero() {
-  const [isDownloading, setIsDownloading] = useState(false);
-
-  
-//     const handleDownloadCV = async () => {
-//   setIsDownloading(true);
-//   try {
-//     const response = await fetch('http://localhost:5000/api/download_cv', {
-//       method: 'POST',
-//       headers: { 'Content-Type': 'application/json' },
-//       body: JSON.stringify({ origem: window.location.href })
-//       // Se quiser enviar mais dados: body: JSON.stringify({ ... })
-//     });
-//     if (!response.ok) {
-//       throw new Error('Erro ao baixar o CV');
-//     }
-//     const contentType = response.headers.get('content-type');
-//     if (!contentType || !contentType.includes('application/pdf')) {
-//       throw new Error('Resposta inválida, não é um PDF');
-//     }
-//     const blob = await response.blob();
-//     const url = window.URL.createObjectURL(blob);
-//     const link = document.createElement('a');
-//     link.href = url;
-//     link.download = 'cv-data-engineer-25.pdf';
-//     document.body.appendChild(link);
-//     link.click();
-//     link.remove();
-//     window.URL.revokeObjectURL(url);
-//   } catch (error) {
-//     console.error('Erro ao baixar o CV:', error);
-//     alert('Erro ao baixar o CV. Tente novamente ou entre em contato.');
-//   } finally {
-//     setIsDownloading(false);
-//   }
-// };
-
   return (
     <section
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-[80px]"
-      // pt-[80px] dá espaçamento pra header fixo
     >
+      {/* Background */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${heroBackground})` }}>
         <div className="absolute inset-0 bg-background/70" />
       </div>
 
+      {/* Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto space-y-8 animate-slide-up">
 
@@ -67,6 +31,7 @@ export default function Hero() {
             arquiteturas escaláveis e soluções inovadoras de engenharia de dados.
           </p>
 
+          {/* Badges */}
           <div className="flex flex-wrap justify-center gap-3 mt-8">
             {["Python", "Apache Spark", "SQL", "AWS", "Docker", "ETL/ELT", "Apache Airflow", "Big Data"].map((tech) => (
               <Badge
@@ -79,7 +44,8 @@ export default function Hero() {
             ))}
           </div>
 
-          <div className="flex justify-center space-x-6 mt-8">
+          {/* Social Links */}
+          <div className="flex justify-center space-x-6 mt-10">
             <a href="https://www.linkedin.com/in/carlospaiva88/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-data-blue transition-colors duration-300 hover:scale-110 transform" aria-label="LinkedIn">
               <Linkedin size={24} />
             </a>
@@ -89,14 +55,25 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        {/* Scroll Down */}
+        <div className="absolute bottom-6  left-1/2 transform -translate-x-1/2 animate-bounce">
           <ArrowDown className="h-6 w-6 text-data-blue" />
         </div>
       </div>
 
-      <div className="absolute top-1/4 left-10 w-20 h-20 bg-gradient-primary rounded-full opacity-20 animate-float" />
-      <div className="absolute top-1/3 right-10 w-16 h-16 bg-gradient-secondary rounded-full opacity-20 animate-float" style={{ animationDelay: "1s" }} />
-      <div className="absolute bottom-1/4 left-1/4 w-12 h-12 bg-gradient-accent rounded-full opacity-20 animate-float" style={{ animationDelay: "2s" }} />
+      {/* Floating Elements */}
+      <div
+        className="absolute top-1/4 left-10 w-20 h-20 bg-gradient-primary rounded-full opacity-20 animate-float-diagonal"
+        style={{ animationDelay: "0s" }}
+      />
+      <div
+        className="absolute top-1/3 right-10 w-16 h-16 bg-gradient-secondary rounded-full opacity-20 animate-float-diagonal"
+        style={{ animationDelay: "1s" }}
+      />
+      <div
+        className="absolute bottom-1/4 left-1/4 w-12 h-12 bg-gradient-accent rounded-full opacity-20 animate-float-diagonal"
+        style={{ animationDelay: "2s" }}
+      />
     </section>
   );
 }

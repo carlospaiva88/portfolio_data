@@ -45,7 +45,7 @@ const About = () => {
                 </p>
 
                 <p className="text-muted-foreground leading-relaxed">
-                  Integro com facilidade em <strong className="text-data-teal">ambientes ágeis</strong> e colaborativos, e adoto práticas de <strong className="text-data-teal">DevOps</strong> para automatização e entrega contínua de valor.
+                  Integro com facilidade em <strong className="text-data-blue">ambientes ágeis</strong> e colaborativos, e adoto práticas de <strong className="text-data-blue">DevOps</strong> para automatização e entrega contínua de valor.
                 </p>
 
               </div>
@@ -55,14 +55,14 @@ const About = () => {
                 <h3 className="text-xl font-semibold text-foreground">Principais Competências:</h3>
                 <div className="grid grid-cols-2 gap-3">
                   {[
-                    "Pipeline Development",
+                    "Desenvolvimento de Pipelines",
                     "Data Warehousing", 
-                    "ETL/ELT Processes",
-                    "Real-time Processing",
+                    "ETL/ELT",
+                    "Desenvolvimento Web",
                     "Cloud Architecture",
-                    "Data Quality",
-                    "Performance Optimization",
-                    "Team Collaboration"
+                    "Qualidade de Dados",
+                    "Otimização de Performance",
+                    "Trabalho em Equipe"
                   ].map((skill) => (
                     <div key={skill} className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-gradient-primary rounded-full" />

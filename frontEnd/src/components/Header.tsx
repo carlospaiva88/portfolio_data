@@ -43,14 +43,7 @@ const Header = () => {
               ))}
             </nav>
 
-            <div className="flex items-center space-x-4">
-              <Button variant="outline" size="sm" asChild>
-                <Link to="/artigos">Artigos</Link>
-              </Button>
-              <Button variant="outline" size="sm" asChild>
-                <Link to="/produtos">Produtos</Link>
-              </Button>
-            </div>
+            
           </div>
 
           {/* Menu mobile */}
@@ -79,20 +72,7 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
-              <Link
-                to="/artigos"
-                className="block text-foreground hover:text-data-blue px-3 py-2 text-base font-medium transition-colors duration-300"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Artigos
-              </Link>
-              <Link
-                to="/produtos"
-                className="block text-foreground hover:text-data-blue px-3 py-2 text-base font-medium transition-colors duration-300"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Produtos
-              </Link>
+             
             </div>
           </div>
         )}

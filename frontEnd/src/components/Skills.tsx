@@ -51,7 +51,7 @@ const Skills = () => {
       skills: [
         { name: "Docker", level: 65, frameworks: ["Kubernetes", "Docker Compose"] },
         { name: "Git", level: 90, frameworks: ["GitHub", "GitLab"] },
-        { name: "CI/CD", level: 58, frameworks: ["Jenkins", "GitHub Actions"] },
+        { name: "CI/CD", level: 58, frameworks: ["GitHub Actions"] },
       ]
     },
     {

@@ -32,25 +32,39 @@ const Contact = () => {
 
 const handleSubmit = async (e) => {
   e.preventDefault();
+
+  const formDataObj = new FormData();
+  formDataObj.append("name", formData.name);
+  formDataObj.append("email", formData.email);
+  formDataObj.append("subject", formData.subject);
+  formDataObj.append("message", formData.message);
+
+  // parâmetros extras opcionais
+  formDataObj.append("_captcha", "false"); // desabilita o captcha
+  // formDataObj.append("_next", "https://seu-dominio.vercel.app/obrigado"); // redireciona pós-envio
+
   try {
-    const response = await fetch('http://localhost:5000/api/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
-    });
-    const result = await response.json();
-    if (result.status === 'success') {
-      alert('Mensagem enviada com sucesso!');
-      setFormData({ name: '', email: '', subject: '', message: '' });
+    const response = await fetch(
+      "https://formsubmit.co/a481cec58ec4facb4684b1ee0b78ae86",
+      {
+        method: "POST",
+        body: formDataObj,
+      }
+    );
+
+    if (response.ok) {
+      alert("Mensagem enviada com sucesso!");
+      setFormData({ name: "", email: "", subject: "", message: "" });
     } else {
-      alert(`Erro: ${result.message}`);
+      alert("Erro ao enviar a mensagem.");
     }
   } catch (error) {
-    alert('Falha ao enviar a mensagem. Tente novamente.');
+    alert("Falha ao enviar a mensagem. Tente novamente.");
   }
 };
+
+
+
 
 
   const contactInfo = [
@@ -306,6 +320,7 @@ const handleSubmit = async (e) => {
                       className="w-full px-4 py-2 rounded-lg bg-muted border border-border focus:border-data-blue focus:outline-none transition-colors resize-none"
                       required
                     />
+                    
                   </div>
 
                   <Button

@@ -11,10 +11,10 @@ const App = () => (
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Index />} />
-      <Route path="/artigos" element={<Articles />} />
+      {/* <Route path="/artigos" element={<Articles />} />
       <Route path="/artigos/:slug" element={<ArticlePage />} />
       <Route path="/produtos" element={<Products />} />
-      <Route path="/produtos/:slug" element={<ProductPage />} />
+      <Route path="/produtos/:slug" element={<ProductPage />} /> */}
       <Route path="*" element={<NotFound />} />
     </Routes>
   </BrowserRouter>
