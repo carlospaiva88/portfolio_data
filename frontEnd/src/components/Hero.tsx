@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Badge } from "./ui/badge";
 import { ArrowDown, Linkedin, Github } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";  // import WhatsApp icon
 import heroBackground from "@/assets/hero-data-bg.jpg";
 
 export default function Hero() {
@@ -17,7 +18,6 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto space-y-8 animate-slide-up">
-
           <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
             <span className="block text-foreground">Olá, eu sou</span>
             <span className="block bg-gradient-primary bg-clip-text text-transparent">Carlos</span>
@@ -25,7 +25,6 @@ export default function Hero() {
               Data Engineer
             </span>
           </h1>
-
           <p className="text-lg sm:text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Transformo dados brutos em insights valiosos através de pipelines robustos,
             arquiteturas escaláveis e soluções inovadoras de engenharia de dados.
@@ -46,17 +45,38 @@ export default function Hero() {
 
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mt-10">
-            <a href="https://www.linkedin.com/in/carlospaiva88/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-data-blue transition-colors duration-300 hover:scale-110 transform" aria-label="LinkedIn">
+            <a
+              href="https://www.linkedin.com/in/carlospaiva88/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-data-blue transition-colors duration-300 hover:scale-110 transform"
+              aria-label="LinkedIn"
+            >
               <Linkedin size={24} />
             </a>
-            <a href="https://github.com/carlospaiva88" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-data-blue transition-colors duration-300 hover:scale-110 transform" aria-label="GitHub">
+            <a
+              href="https://github.com/carlospaiva88"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-data-blue transition-colors duration-300 hover:scale-110 transform"
+              aria-label="GitHub"
+            >
               <Github size={24} />
+            </a>
+            <a
+              href="https://wa.me/5548991068048"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-green-500 transition-colors duration-300 hover:scale-110 transform"
+              aria-label="WhatsApp"
+            >
+              <FaWhatsapp size={24} />
             </a>
           </div>
         </div>
 
         {/* Scroll Down */}
-        <div className="absolute bottom-6  left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 animate-bounce">
           <ArrowDown className="h-6 w-6 text-data-blue" />
         </div>
       </div>
