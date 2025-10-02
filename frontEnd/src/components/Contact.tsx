@@ -78,7 +78,7 @@ const handleSubmit = async (e) => {
     {
       icon: Phone,
       label: "Telefone",
-      value: "+55 (48) 99106-8048",
+      value: "+351 928 436 871",
       href: "",
       color: "text-data-green",
     },
